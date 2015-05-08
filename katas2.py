@@ -35,16 +35,6 @@ def service(score):
 #print service("11:13")
 
 
-# ROMAN NUMBERS ENCODER
-def solution(roman):
-    d = {"M":1000,"D":500,"C":100,"L":50,"X":10,"V":5,"I":1}
-    l = [d[let] for let in roman]
-    for i in range(1,len(l)):
-        if l[i-1]<l[i] : l[i-1] = -l[i-1]
-    return sum(l)
-
-#print solution("MCDXLIV")
-
 
 # CHINESE NUMBER DECODER
 def toChineseNumeral(num) :
